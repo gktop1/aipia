@@ -1,0 +1,21 @@
+server:
+  port: 11000
+  servlet:
+    session:
+      timeout: 6000
+
+spring:
+  application:
+    name: global-jp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/aipia?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: aipia
+    password: Qhdtjr!23
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
